@@ -1,0 +1,45 @@
+body{
+    background-color: whitesmoke;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    height: 280px;
+    padding: 24px 44px;
+    margin: 30px 10px;
+    border-radius: 8px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(1, 91, 226, 0.719);
+    color: white;
+    font-size: 12px;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+span{
+    text-transform: lowercase;
+}
+
+h3{
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+img{
+    border-radius: 8px;
+}
