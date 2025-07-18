@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin: 0px;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --mainShadow: 0 1px 6px #0001;
+    --mainRadius: 20px;
+    --mainColor: #FFF5EC;
+    --secondColor: #A8490F;
+}
+
+nav {
+    padding: 4px 70px;
+    display: flex;
+    width: 100%;
+    background-color: var(--secondColor);
+    color: white;
+    justify-content: space-between;
+    align-content: center;
+}
+
+nav .menu {
+    display: flex;
+    width: 40%;
+    font-size: 20px;
+    justify-content: space-between;
+    font-weight: 350;
+}
+
+nav .name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.welcome {
+    padding: 40px;
+    display: flex;
+    background-color: #fdfaf8;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome>div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: var(--mainRadius);
+    box-shadow: var(--mainShadow);
+}
+
+.welcome div img {
+    width: 150px;
+    height: 150px;
+    margin: 40px;
+    object-fit: cover;
+    border: 4px var(--secondColor) solid;
+    border-radius: 20px;
+}
+
+.welcome div h5 {
+    font-size: 28px;
+    margin: 20px 0px;
+}
+
+.welcome div p {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.welcome div div {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.why {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 420px;
+    background-color: var(--mainColor);
+}
+
+.why>div {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.why>p,
+.del p,
+.end>p {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.why div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    height: 250px;
+    border-radius: var(--mainRadius);
+    box-shadow: var(--mainShadow);
+    margin: 6px;
+}
+
+.why div div img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    color: #A8490F;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.desc {
+    font-size: 18px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+.foods img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.del {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types button {
+    background-color: #FFF9F4;
+    color: var(--secondColor);
+    padding: 6px 20px;
+    margin: 4px;
+    border-radius: 10px;
+    border: 2px #ffead7 solid;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.types button:hover,
+.types button:active {
+    background-color: var(--secondColor);
+    color: white;
+}
+
+.foods {
+    display: flex;
+    flex-wrap: wrap;
+    width: 86%;
+}
+
+.foods>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF9F4;
+    width: calc(94% / 3);
+    height: 220px;
+    border-radius: var(--mainRadius);
+    box-shadow: var(--mainShadow);
+    margin: 16px auto;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.price {
+    background-color: #FFE1B3;
+    color: var(--secondColor);
+    font-size: 20PX;
+    font-weight: 550;
+    border-radius: 10px;
+    padding: 6px 16px;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+    background-color: var(--mainColor);
+    margin: 40px;
+}
+
+.end>div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.info {
+    background-color: white;
+    width: calc(100% / 3);
+    height: 220px;
+    border-radius: var(--mainRadius);
+    box-shadow: var(--mainShadow);
+    margin: 0px 12px;
+    text-align: center;
+    align-content: center;
+}
+
+iframe {
+    width: calc(100% / 3);
+    height: 220px;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer .container {
+    padding: 20px 70px;
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    background-color: var(--secondColor);
+    color: white;
+    justify-content: center;
+}
